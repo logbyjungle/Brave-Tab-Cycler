@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Cycler",
+  "version": "1.0",
+  "description": "Cycle between Chrome tabs with Ctrl+Tab.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "cycle-next-tab": {
+      "suggested_key": {
+        "default": "Ctrl+Tab"
+      },
+      "description": "Cycle to the next tab"
+    }
+  }
+}
